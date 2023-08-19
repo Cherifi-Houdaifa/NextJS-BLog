@@ -1,0 +1,23 @@
+.nav {
+    height: 60px;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.profile-pic {
+    border-radius: 50%;
+}

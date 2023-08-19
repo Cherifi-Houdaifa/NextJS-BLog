@@ -11,8 +11,8 @@ export default function NavBar() {
     return (
         <nav className={styles["nav"]}>
             <div className={styles["links"]}>
-                <Link href="#">Home</Link>
-                <Link href="#">Blog</Link>
+                <Link href="/">Home</Link>
+                <Link href="/blog">Blog</Link>
                 <Link href="#">Profile</Link>
                 <Link href="#">About</Link>
             </div>

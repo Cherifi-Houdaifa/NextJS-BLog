@@ -1,0 +1,19 @@
+.header {
+    text-align: center;
+}
+.date {
+    color: #7c7c7c83;
+    font-weight: 400;
+    text-align: center;
+}
+.content {
+    border: 2px solid black;
+    padding: 30px;
+}
+.comments {
+
+}
+.comment {
+    padding: 20px;
+    border: 2px solid black;
+}

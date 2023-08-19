@@ -1,9 +1,7 @@
-import styles from './page.module.css'
+import styles from "./page.module.css";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/authOptions";
 
-export default function Home() {
-  return (
-    <main>
-        Hello world
-    </main>
-  )
+export default async function Home() {
+    return <main>Hello world</main>;
 }

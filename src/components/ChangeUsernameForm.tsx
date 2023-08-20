@@ -5,7 +5,11 @@ import { FormEvent, useState } from "react";
 
 import { signOut } from "next-auth/react";
 
-export default function ChangeUsernameForm({className}: {className: string}) {
+export default function ChangeUsernameForm({
+    className,
+}: {
+    className: string;
+}) {
     const [isLoading, setIsLoading] = useState(false);
 
     const formSubmitHandler = async (e: FormEvent<HTMLFormElement>) => {
@@ -22,7 +26,6 @@ export default function ChangeUsernameForm({className}: {className: string}) {
                 newUsername,
             }),
         });
-        setIsLoading(false);
         if (response.status === 200) {
             await signOut();
         }
@@ -30,7 +33,12 @@ export default function ChangeUsernameForm({className}: {className: string}) {
 
     return (
         <form onSubmit={formSubmitHandler} className={className}>
-            <input type="text" placeholder="New Username" name="newUsername" autoComplete="off"/>
+            <input
+                type="text"
+                placeholder="New Username"
+                name="newUsername"
+                autoComplete="off"
+            />
             {isLoading ? (
                 <button type="submit" disabled={true}>
                     Loading...

@@ -28,7 +28,7 @@ export default function NavBar() {
                         />
                         <p>{session.user.name}</p>
                         <Link href="/api/auth/signout">Signout</Link>
-                        <Link href="#">Create a post</Link>
+                        <Link href="/blog/new">Create a post</Link>
                     </>
                 ) : (
                     <>

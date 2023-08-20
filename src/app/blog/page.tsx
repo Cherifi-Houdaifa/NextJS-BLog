@@ -2,6 +2,8 @@ import { prisma } from "@/lib/db";
 import styles from "./page.module.css";
 import Link from "next/link";
 
+export const revalidate = 0
+
 export default async function Blog() {
     const posts = await prisma.post.findMany({
         orderBy: {

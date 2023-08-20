@@ -1,0 +1,13 @@
+.header {
+    text-align: center;
+    padding-top: 20px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mini-header {
+    text-align: center;
+}

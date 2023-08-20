@@ -6,15 +6,15 @@ import Image from "next/image";
 import { useSession } from "next-auth/react";
 
 export default function NavBar() {
-    const {data: session, status} = useSession()
+    const {data: session} = useSession()
 
     return (
         <nav className={styles["nav"]}>
             <div className={styles["links"]}>
                 <Link href="/">Home</Link>
                 <Link href="/blog">Blog</Link>
-                <Link href="#">Profile</Link>
-                <Link href="#">About</Link>
+                <Link href="/profile">Profile</Link>
+                <Link href="/about">About</Link>
             </div>
             <div className={styles["data"]}>
                 {session ? (
